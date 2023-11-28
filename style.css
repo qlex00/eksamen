@@ -1,7 +1,113 @@
+body {
+    background-color: #fff;
+}
+
+header {
+    text-align: center;
+    background-color: lightgray;
+}
+
+.top-header { 
+    width: 100%; 
+    background-image: url(ressurser/400x400.png); 
+    background-size: cover; 
+    background-position: center; 
+} 
+ 
+.top-header > h1 { 
+    color: white; 
+    background-color: rgba(0,0,0,0.3); 
+    padding: 2em 1em; 
+    font-family: sans-serif; 
+} 
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+hr {
+    color:#e6bd43;
+}
+
+#artikkel-border {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.produkt-artikkel {
+    max-width: 350px;
+    min-width: 200px;
+}
+
+#client-style {
+    background-color: #e6bd43;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color:#000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+}
+  
+li a.active {
+    background-color: #e6bd43;
+}
+  
+li a.active:hover {
+    color: #e6bd43;
+    background-color: #252525;
+}
+
+button {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #e6bd43;
+}
+
+.button-styling {
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000; 
+}
+
+footer {
+    background-color: #252525;
+}
+
+#footer{
+    color: #fff;
+}
+
 /*Gull-gul kode: #e6bd43
 
 Gråsvart: #252525
 
 Svart: #000
 
-Hvit: #fff*/
+Hvit: #fff
+
+
+    Det skal kun være et stilark, med mindre man også bruker normalize eller har font awsome filene.
+    Du skal skrive CSS for å oppnå resultatet på skissene, i E-D kravet trenger man ikke bruke CSS grid eller Flexbox.
+    Du skal bruke en websafe font
+    Alle artikkelkortene på porfoliosiden skal ha en maks bredde på 350px og en min bredde på 200px
+*/
