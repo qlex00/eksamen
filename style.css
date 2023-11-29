@@ -19,14 +19,14 @@ header h1 {
 
 main {
     box-sizing: border-box;
-    padding: 50px;
     margin: 1px;
     display: block;
 }
 
+
 .top-header { 
      
-    background-image: url(ressurser/400x400.png); 
+    background-image: url(ressurser/background.png); 
     background-size: cover; 
     background-position: center; 
     position: relative;
@@ -42,6 +42,7 @@ main {
 
 .center-text {
     text-align: center;
+    
 }
 
 h1 {
@@ -56,13 +57,11 @@ hr {
 
 #artikkel-border {
     box-sizing: border-box;
-    border: 1px solid #000;
-    display: inline-block;
-    border-style: solid;
-    border-width: 1px;
     width: 100%; 
-    
-
+    background-color:#e6bd43;
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 #artikkel-border form {
@@ -91,16 +90,22 @@ hr {
     overflow: hidden;
 }
 
+nav img {
+    float: left;
+}
+
 ul {
     float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    
 }
 
 li {
-    float: left;
+    display: inline-block
+    
 }
   
 li a {
@@ -135,6 +140,7 @@ li a {
   
 li a#active2 {
     background-color: #e6bd43;
+    
 }
   
 li a#active2:hover {
@@ -156,6 +162,7 @@ li a#active2:hover {
     padding-right: 20px;
 }
 
+
 .float-container {
     width: 100%;
     overflow: hidden;
@@ -173,19 +180,82 @@ button {
     background-color: #e6bd43;
 }
 
+button:hover {
+    color: #e6bd43;
+    background-color: #252525;
+}
+
 .button-styling {
-    background-color: #fff;
     color: #000;
     border: 3px solid #000; 
 }
 
-footer {
-    background-color: #252525;
+.button-styling2 {
+    background-color: #fff;
 }
 
-#footer{
-    color: #fff;
+iframe {
+    width: 100%;
+    height: 200; 
 }
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    
+}
+
+#contact-us {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+
+form, #contact-info {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 80px; 
+}
+
+#textbox1 {
+    background-color: lightgray;
+}
+
+#email-signup {
+    width: 10%
+}
+
+
+footer {
+    background-color: #252525;
+     
+}
+
+
+
+
 
 /*Gull-gul kode: #e6bd43
 
