@@ -1,41 +1,79 @@
 body {
     background-color: #fff;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 header {
-    text-align: center;
+    width: 100%;
     background-color: lightgray;
+    padding: 100px;
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 1px;
+    display: block;
 }
 
 .top-header { 
-    width: 100%; 
+     
     background-image: url(ressurser/400x400.png); 
     background-size: cover; 
     background-position: center; 
+    position: relative;
 } 
  
 .top-header > h1 { 
     color: white; 
     background-color: rgba(0,0,0,0.3); 
     padding: 2em 1em; 
-    font-family: sans-serif; 
+    font-family: sans-serif;
+    margin: 0; 
 } 
 
-main {
+.center-text {
     text-align: center;
 }
 
 h1 {
     font-weight: bold;
+    margin: 0;
 }
 
 hr {
     color:#e6bd43;
+    margin: 2em 0;
 }
 
 #artikkel-border {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    display: inline-block;
     border-style: solid;
     border-width: 1px;
+    width: 100%; 
+    
+
+}
+
+#artikkel-border form {
+    margin-top: 20px;
+}
+
+#artikkel-border img {
+    display: block;
+    float: left;
+    margin-right: auto;
+    padding: 100px;
 }
 
 .produkt-artikkel {
@@ -44,7 +82,13 @@ hr {
 }
 
 #client-style {
+    margin: 0;
+    width: 100%;
+    padding: 100px;
+    display: block;
     background-color: #e6bd43;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 ul {
@@ -67,14 +111,60 @@ li a {
     text-decoration: none;
     position: relative;
 }
+
+.topnav {
+    overflow: hidden;
+}
   
-li a.active {
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.topnav a:hover {
+    border-bottom: 3px solid #e6bd43;
+}
+  
+.topnav a#active1 {
+    border-bottom: 3px solid #e6bd43;
+}
+  
+li a#active2 {
     background-color: #e6bd43;
 }
   
-li a.active:hover {
+li a#active2:hover {
     color: #e6bd43;
     background-color: #252525;
+}
+
+.container {
+    position: relative;
+}
+  
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightgray;
+    color: #000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.float-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.float-element {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
 }
 
 button {

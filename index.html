@@ -10,24 +10,24 @@
     <nav>
         <a href="index.html"><img src="ressurser/logo1.png" alt="placeholder logo bilde"></a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="about.html">Contact</a></li>
+            <li class="topnav"><a id="active1" href="index.html">Home</a></li>
+            <li class="topnav"><a href="products.html">Portfolio</a></li>
+            <li class="topnav"><a href="about.html">About</a></li>
+            <li><a id="active2" href="about.html">Contact</a></li>
         </ul>
     </nav>
-    <header>
+    <header class="center-text">
         <h1>Compeling Headline</h1>
         <p>The happiest moment of my life. Yes, Lord Sidious? General Grievous, I suggest you move the separatist leaders to Mustafar. 
         It will be done, my lord. The end of the war is near, General. But the loss of Count Dooku His death was a necessary loss. 
         Soon I will have a new apprentice one far younger and more powerful.</p>
-        <form action="about.html">
-        <button>Read more about our services</button>
+        <form action="#services">
+        <button >Read more about our services</button>
         </form>
     </header>
     <main>
-        <h2>Engaging subheading. What can you help your visitors with</h2>
-        <p>Move to the right, so I can get a clear shot at them. The mission. Get to the command ship. Get the chancellor. I'm running out of tricks here. 
+        <h2 class="center-text">Engaging subheading. What can you help your visitors with</h2>
+        <p class="center-text">Move to the right, so I can get a clear shot at them. The mission. Get to the command ship. Get the chancellor. I'm running out of tricks here. 
         In the name of Hold your fire! You're not helping. I agree. Let's go! Commander, contact your troops. Tell them to move to the higher levels. 
         Very good, sir. By the way, I think you'll be needing this. Thank you, Cody. Let's get a move on. We've got a battle to win. </p>
         <section>
@@ -53,18 +53,32 @@
 
             </article>
         </section>
+            <h2 class="center-text" id="services">Our services</h2> 
 
-        <h2>Our services</h2>
-        <h2>Branding</h2>
-        <p>Kill him. Kill him now. I shouldn't. Do it. </p>
-        <h2>Design</h2>
-        <p>Kill him. Kill him now. I shouldn't. Do it. </p>
-        <h2>Developement</h2>
-        <p>Kill him. Kill him now. I shouldn't. Do it. </p>
-        <h2>Support</h2>
-        <p>Kill him. Kill him now. I shouldn't. Do it. </p>
+        <div class="center-text" class="float-container">
+            <div class="float-element">
+            <h2>Branding</h2>
+            <p>Kill him. Kill him now. I shouldn't. Do it. </p>
+            </div>
+            
+            <div class="float-element">
+            <h2>Design</h2>
+            <p>Kill him. Kill him now. I shouldn't. Do it. </p>
+            </div>
 
-        <section>
+            <div class="float-element">
+            <h2>Developement</h2>
+            <p>Kill him. Kill him now. I shouldn't. Do it. </p>
+            </div>
+
+            <div class="float-element">
+            <h2>Support</h2>
+            <p>Kill him. Kill him now. I shouldn't. Do it. </p>
+            </div>
+        </div>
+
+        <!--flex later-->
+        <section class="center-text">
             <article>
                 <h2>Sign up for our newsletter</h2>
                 <input type="text" id="email-signup">

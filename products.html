@@ -10,10 +10,10 @@
     <nav>
         <a href="index.html"><img src="ressurser/logo1.png" alt="placeholder logo bilde"></a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="about.html">Contact</a></li>
+            <li class="topnav"><a id="active1" href="index.html">Home</a></li>
+            <li class="topnav"><a href="products.html">Portfolio</a></li>
+            <li class="topnav"><a href="about.html">About</a></li>
+            <li><a id="active2" href="about.html">Contact</a></li>
         </ul>
     </nav>
     <header class="top-header">
@@ -22,10 +22,10 @@
     <main>
         <h2>Explore previous jobs</h2>
         <hr>
-        <button class="button-styling">Branding</button> <button class="button-styling">Design</button> <button class="button-styling">Development</button>
-        
+        <a href="#branding"><button class="button-styling">Branding</button></a> <a href="#design"><button class="button-styling">Design</button></a> <a href="#development"><button class="button-styling">Development</button></a>
+
         <section>
-            <h2>Branding</h2>
+            <h2 id="branding">Branding</h2>
             <hr>
             <article class="produkt-artikkel">
                 <img src="ressurser/400x400.png" alt="placeholder bilde 400x400"> 
@@ -44,7 +44,7 @@
         </section>
 
         <section>
-            <h2>Design</h2>
+            <h2 id="design">Design</h2>
             <hr>
             <article class="produkt-artikkel">
                 <img src="ressurser/400x400.png" alt="placeholder bilde 400x400"> 
@@ -68,7 +68,7 @@
         </section>
 
         <section>
-            <h2>Developement</h2>
+            <h2 id="development">Development</h2>
             <hr>
             <article class="produkt-artikkel">
                 <img src="ressurser/400x400.png" alt="placeholder bilde 400x400"> 
@@ -92,6 +92,19 @@
             <li><a href="https://www.linkedin.com/">linkedin</a></li>
         </ul>
     </footer>
+
+    <script>
+        // JavaScript to handle smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+      
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+      </script>
     
 </body>
 </html>
